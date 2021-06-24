@@ -17,7 +17,6 @@ class CreateUserService {
 
         const usersRepository = getCustomRepository(UsersRepositories)
 
-        console.log("email", email);
 
         if(!email) {
             throw new Error("Email incorreto");
